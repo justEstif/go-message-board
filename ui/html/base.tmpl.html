@@ -1,0 +1,18 @@
+{{define "base"}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css"
+    />
+    <title>{{template "title" .}} - Message Board</title>
+  </head>
+  <body class="container">
+    <header>{{template "nav" .}}</header>
+    <main>{{template "main" .}}</main>
+    <footer>Powered by <a href="https://golang.org/">Go</a></footer>
+  </body>
+</html>
+{{end}}

@@ -8,7 +8,7 @@ Features
 
 - docker
 - postgres
-- tailwindcss
+- picocss-v2
 
 ---
 
