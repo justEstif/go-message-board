@@ -12,10 +12,11 @@ Features
 
 ---
 
-2 routes:
-
-- "/": show messages
-- "/new": page to create messages
+| method | url pattern     | handler         | action                     |
+| ------ | --------------- | --------------- | -------------------------- |
+| ANY    | /               | home            | display home page          |
+| ANY    | /message/view   | `messageView`   | display a specific message |
+| POST   | /message/create | `messageCreate` | create a new message       |
 
 ```go
 type Message struct {
